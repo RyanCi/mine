@@ -1,0 +1,19 @@
+db.getCollection('acl_action').update(
+{"name" : "Save Role Management"},
+{$set : {"name" : "Save Role"}}, 
+{multi : true})
+
+db.getCollection('acl_action').update(
+{"name" : "Remove Role Management"},
+{$set : {"name" : "Remove Role"}}, 
+{multi : true})
+
+db.getCollection('acl_log').update(
+{"do" : "Save Role Management"},
+{$set : {"do" : "Save Role"}}, 
+{multi : true})
+
+db.getCollection('acl_log').update(
+{"do" : "Remove Role Management"},
+{$set : {"do" : "Remove Role"}}, 
+{multi : true})
